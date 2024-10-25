@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ola-Porter | Passenger Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        .gradient-bg {
+            background: linear-gradient(90deg, #000000 0%, #1a365d 100%);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        .pt-16 {
+            position: relative;
+            background-image: url('bg.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            overflow: hidden;
+            /* background-color: rgba(0, 0, 0, 0.5);  */
+            opacity: 1;
+        }
+        /* Overlay with opacity */
+        /* .pt-16::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+        } */
+        /* Content above overlay */
+        /* .pt-16 .content {
+            color: white;
+            position: relative;
+            z-index: 2;
+        } */
+        .hello {
+        color: rgb(255, 255, 255);
+        opacity: 1;
+
+    }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="gradient-bg shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="flex items-center space-x-2">
+                    <span class="text-2xl font-bold text-white">Ola-Porter</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#rides" class="text-gray-300 hover:text-white transition">Rides</a>
+                    <a href="#delivery" class="text-gray-300 hover:text-white transition">Delivery</a>
+                    <a href="#business" class="text-gray-300 hover:text-white transition">Business</a>
+                    <a href="#download" class="text-gray-300 hover:text-white transition">Download App</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-white hover:text-gray-300">Login</a>
+                    <a href="#" class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="pt-16">
+        <div class="">
+            <div class="container mx-auto px-4 py-20">
+                <div class="text-center hello">
+                    <h1 class="text-5xl font-bold mb-6">Passenger Services</h1>
+                    <p class="text-3xl font-bold mb-8">Reliable, Affordable, and Comfortable Rides</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Location Selection Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Select Your Location</h2>
+            <div class="mb-6">
+                <label for="location" class="block text-lg font-semibold mb-2">Choose Your Pickup Location:</label>
+                <select id="location" class="border border-gray-300 rounded-lg p-3">
+                    <option value="Andheri">Andheri</option>
+                    <option value="Thane">Thane</option>
+                    <option value="Wadala"> Wadala</option>
+                    <option value="Panvel"> Panvel</option>
+                </select>
+            </div>
+            <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Map" class="w-full h-64 object-cover rounded-lg" />
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Group Ride Card -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center mb-4">
+                        <!-- <img src="https://img.icons8.com/ios-filled/50/4A5568/minibus.png" alt="Group Ride" class="w-12 h-12 mr-3" /> -->
+                        <h2 class="text-2xl font-bold">Group Ride</h2>
+                    </div>
+                    <p class="text-gray-600 mb-4">Ideal for larger groups; enjoy a comfortable ride together.</p>
+                    <p class="font-semibold">Starting at: ₹800 per person</p>
+                </div>
+
+                <!-- Luxury Group Ride Card -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center mb-4">
+                        <!-- <img src="https://img.icons8.com/ios-filled/50/4A5568/luxury-car.png" alt="Luxury Group Ride" class="w-12 h-12 mr-3" /> -->
+                        <h2 class="text-2xl font-bold">Luxury Group Ride</h2>
+                    </div>
+                    <p class="text-gray-600 mb-4">Travel in style with our premium vehicles and exceptional service for your group.</p>
+                    <p class="font-semibold">Starting at: ₹1500 per person</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Peaceful Travel Images Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Traveling in Peace</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <!-- <img src="https://images.unsplash.com/photo-1577169814924-42b6d6b51e38" alt="Traveling Peacefully" class="w-full h-64 object-cover" /> -->
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <!-- <img src="https://images.unsplash.com/photo-1512934752585-1c69f49c98b6" alt="Relaxing Travel" class="w-full h-64 object-cover" /> -->
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <!-- <img src="https://images.unsplash.com/photo-1491412701978-4e97da318d3e" alt="Calm Travel" class="w-full h-64 object-cover" /> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Porter Partner Booking -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Book a Porter Partner for Luggage Assistance</h2>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <!-- <img src="https://images.unsplash.com/photo-1574100755567-4b9f3e30d12b" alt="Porter" class="mb-4 w-full h-64 object-cover rounded-lg" /> -->
+                <p class="text-gray-600 mb-4">Need help with your luggage? Our Porter Partners are ready to assist you!</p>
+                <p class="font-semibold">Starting at: ₹300</p>
+                <a href="#" class="bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition mt-4">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Book Your Ride Today!</h2>
+            <p class="mb-8">Experience our quality services with just a few clicks.</p>
+            <a href="#" class="bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-4">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <p>&copy; 2024 Ola-Porter. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
